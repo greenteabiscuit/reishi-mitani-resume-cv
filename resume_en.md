@@ -1,7 +1,7 @@
 # Reishi Mitani
 
 Tokyo, Japan  
-Email: reishim0731@gmail.com | LinkedIn: https://www.linkedin.com/in/reishi-mitani-000232189/
+Email: reishim0731@gmail.com | LinkedIn: linkedin.com/in/reishi-mitani-000232189 | GitHub: github.com/greenteabiscuit
 
 ---
 
@@ -10,7 +10,7 @@ Email: reishim0731@gmail.com | LinkedIn: https://www.linkedin.com/in/reishi-mita
 Software and systems engineer focused on applied ML systems, data infrastructure, embedded security, and production reliability.  
 Experienced in integrating machine-learning pipelines into large-scale services, improving observability for high-traffic APIs, and building secure infrastructure for constrained IoT environments.  
 Currently working at Indeed on taxonomy, classification, and metadata platforms supporting ML-driven features at scale.  
-Fluent in English and Japanese; professional proficiency in Chinese.
+Fluent in English and Japanese; advanced Chinese proficiency (HSK6).
 
 ---
 
@@ -18,7 +18,7 @@ Fluent in English and Japanese; professional proficiency in Chinese.
 
 ### Software Engineer — Indeed Technologies Japan
 
-*2023 – Present*
+*Apr 2023 – Present*
 
 Work on backend platforms and data infrastructure powering ML-driven metadata and taxonomy services.
 
@@ -59,7 +59,7 @@ Work on backend platforms and data infrastructure powering ML-driven metadata an
 
 ### Senior Systems Engineer (Freelance) — Scurid
 
-*July 2022 – Present*
+*Jul 2022 – Present*
 
 Lead embedded systems and backend engineering for Scurid's IoT security and identity platform.
 
@@ -77,21 +77,21 @@ Lead embedded systems and backend engineering for Scurid's IoT security and iden
 ## Education
 
 **M.S. Interdisciplinary Information Studies**  
-University of Tokyo, 2021 Apr. - 2023 Mar.
+University of Tokyo, Apr 2021 – Mar 2023
 
 **B.Eng. Systems Innovation**  
-University of Tokyo, 2016 Apr. - 2021 Mar.
+University of Tokyo, Apr 2016 – Mar 2021
 
 ---
 
 ## Skills
 
-**Languages:** Java, Kotlin, Go, TypeScript, C, Python, SQL  
+**Programming Languages:** Java, Kotlin, Go, TypeScript, C, Python, SQL  
 **Infra/Data:** MongoDB, Neo4j, InfluxDB, CockroachDB, AWS, GCP, Kubernetes/GKE, Docker, Helm, distributed data pipelines, search/indexing systems  
 **Protocols/Security:** gRPC, Protobuf/nanopb, MQTT, LoRaWAN, SSH tunneling, TLS/mTLS, mbedTLS, secp256k1, DID  
 **Specialties:** ML integration, AI/LLM taxonomies, classification systems, backend platforms, observability, embedded systems, system migrations, data modeling
 
-**Languages spoken:**  
+**Spoken Languages:**  
 English (fluent, TOEFL iBT 117)  
 Japanese (native)  
 Chinese (advanced, HSK6)
