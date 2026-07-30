@@ -103,17 +103,22 @@ struct Block {
     let spacingBefore: CGFloat
     let spacingAfter: CGFloat
     let rule: Bool
+    let pageBreak: Bool
 }
 
 var blocks: [Block] = []
 for rawLine in markdown.components(separatedBy: .newlines) {
     let line = rawLine.replacingOccurrences(of: "  ", with: "").trimmingCharacters(in: .whitespaces)
     if line.isEmpty {
-        blocks.append(Block(attr: nil, spacingBefore: 0, spacingAfter: 2.7, rule: false))
+        blocks.append(Block(attr: nil, spacingBefore: 0, spacingAfter: 2.7, rule: false, pageBreak: false))
+        continue
+    }
+    if line == "<!-- pagebreak -->" {
+        blocks.append(Block(attr: nil, spacingBefore: 0, spacingAfter: 0, rule: false, pageBreak: true))
         continue
     }
     if line == "---" {
-        blocks.append(Block(attr: nil, spacingBefore: 4.5, spacingAfter: 6, rule: true))
+        blocks.append(Block(attr: nil, spacingBefore: 4.5, spacingAfter: 6, rule: true, pageBreak: false))
         continue
     }
 
@@ -150,7 +155,7 @@ for rawLine in markdown.components(separatedBy: .newlines) {
         attr = attributedInline(String(line.dropFirst(2).dropLast(2)), font: sectionFont, boldFont: sectionFont, italicFont: sectionFont, style: style)
         before = 2.3
         after = 2
-    } else if line.hasPrefix("Email:") || line.hasPrefix("Tokyo,") {
+    } else if line.hasPrefix("Email:") || line.hasPrefix("Tokyo,") || line == "東京都" || line == "三谷 玲志" {
         style = paragraphStyle(alignment: .center, lineSpacing: 0)
         attr = attributedInline(line, font: bodyFont, boldFont: bodyBoldFont, italicFont: bodyItalicFont, style: style)
         after = 1.5
@@ -159,7 +164,7 @@ for rawLine in markdown.components(separatedBy: .newlines) {
         attr = attributedInline(line, font: bodyFont, boldFont: bodyBoldFont, italicFont: bodyItalicFont, style: style)
         after = 1.8
     }
-    blocks.append(Block(attr: attr, spacingBefore: before, spacingAfter: after, rule: false))
+    blocks.append(Block(attr: attr, spacingBefore: before, spacingAfter: after, rule: false, pageBreak: false))
 }
 
 func blockHeight(_ attr: NSAttributedString) -> CGFloat {
@@ -187,6 +192,12 @@ var yFromTop = marginTop
 let bottomLimit = pageHeight - marginBottom
 
 for block in blocks {
+    if block.pageBreak {
+        endPage()
+        beginPage()
+        yFromTop = marginTop
+        continue
+    }
     if block.rule {
         let needed = block.spacingBefore + 1 + block.spacingAfter
         if yFromTop + needed > bottomLimit {
