@@ -1,6 +1,6 @@
 # 職務経歴書
 
-三谷 玲志  
+三谷 怜司  
 東京都  
 Email: reishim0731@gmail.com | LinkedIn: linkedin.com/in/reishi-mitani-000232189 | GitHub: github.com/greenteabiscuit
 

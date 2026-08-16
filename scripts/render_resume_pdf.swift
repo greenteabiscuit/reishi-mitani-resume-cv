@@ -155,7 +155,7 @@ for rawLine in markdown.components(separatedBy: .newlines) {
         attr = attributedInline(String(line.dropFirst(2).dropLast(2)), font: sectionFont, boldFont: sectionFont, italicFont: sectionFont, style: style)
         before = 2.3
         after = 2
-    } else if line.hasPrefix("Email:") || line.hasPrefix("Tokyo,") || line == "東京都" || line == "三谷 玲志" {
+    } else if line.hasPrefix("Email:") || line.hasPrefix("Tokyo,") || line == "東京都" || line == "三谷 怜司" {
         style = paragraphStyle(alignment: .center, lineSpacing: 0)
         attr = attributedInline(line, font: bodyFont, boldFont: bodyBoldFont, italicFont: bodyItalicFont, style: style)
         after = 1.5
