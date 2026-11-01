@@ -63,9 +63,9 @@ Email: reishim0731@gmail.com | LinkedIn: linkedin.com/in/reishi-mitani-000232189
 
 ### Scurid - Senior Systems Engineer（業務委託）
 
-*2022年7月 - 現在*
+*2022年7月 - 2026年7月*
 
-ScuridのIoTセキュリティ・ID基盤において、組み込みシステムおよびバックエンド開発をリード。
+ScuridのIoTセキュリティ・ID基盤において、組み込みシステムおよびバックエンド開発をリードしました。
 
 * リソース制約のあるマイクロコントローラー向けC言語セキュリティライブラリ「microscurid-c」の主要開発者・メンテナーを担当
 * 制約デバイス向けのTLS接続、暗号署名の生成・検証、nanopbによるProtocol Buffersメッセージングを実装

@@ -59,11 +59,11 @@ Work on backend platforms and data infrastructure powering ML-driven metadata an
 
 ### Senior Systems Engineer (Freelance) — Scurid
 
-*Jul 2022 – Present*
+*Jul 2022 – Jul 2026*
 
-Lead embedded systems and backend engineering for Scurid's IoT security and identity platform.
+Led embedded systems and backend engineering for Scurid's IoT security and identity platform.
 
-* Primary developer and maintainer of microscurid-c, Scurid's C-based security library for resource-constrained microcontrollers  
+* Served as primary developer and maintainer of microscurid-c, Scurid's C-based security library for resource-constrained microcontrollers  
 * Implemented TLS connectivity, cryptographic signature generation and verification, and nanopb protobuf messaging for constrained devices  
 * Led porting of MicroScurid-C to Sony Spresense (ARM Cortex-M4F), including MQTT signature verification endpoints, cryptographic integration, and hardware demo development  
 * Designed automated server certificate provisioning via GCP Certificate Authority Service and runtime TLS certificate reloads for zero-downtime rotation in Kubernetes deployments  
